@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
-import {FaUserCircle } from 'react-icons/fa'  
+import {CiUser , CiShoppingCart} from 'react-icons/ci'
+
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
     return (
         <>
-            <div className='w-full flex justify-center bg-[#282828] text-white p-4 '>
+            <div className='w-full flex justify-center bg-[#282828] text-white p-2 text-lg tracking-widest'>
                 Free shipping Over $50
             </div>
             <nav className="w-full bg-white shadow">
@@ -82,12 +83,18 @@ export default function Navbar() {
                                 </li>
                                     <li className="text-[#282828]">
                                     <Link href="/">
-                                    <div> <FaUserCircle/> Log In</div>
+                                    <div className='flex flex-row'> 
+                                    <div className='mr-2'><CiUser size={25}/> </div>
+                                    <div>Log In</div>
+                                    </div>
                                     </Link>
                                 </li>
                                      <li className="text-[#282828]">
                                     <Link href="/purchase">
-                                    <div><AiOutlineShoppingCart/></div>
+                                    <div className='flex flex-row' >
+                                        <div className='mr-2'><CiShoppingCart size={25} /></div> 
+                                        <div>My Cart</div>
+                                        </div>
                                     </Link>
                                 </li>
                             </ul>
