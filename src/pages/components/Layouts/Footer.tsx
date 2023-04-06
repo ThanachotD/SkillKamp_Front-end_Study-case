@@ -68,7 +68,7 @@ export default function Footer() {
             Join Our Mailing List
         </p>
        <div className='flex flex-row justify-center space-x-4 ' >
-       <div className=''><input className='p-2 w-72 focus:border-none focus:outline-none' placeholder='Enter your email here*' />
+       <div ><input className='p-2 w-72 focus:border-none focus:outline-none' placeholder='Enter your email here*' />
 </div> 
        <button className='bg-[#D2461C] p-2 px-6 text-white tracking-normal'> Subscribe Now</button> 
          </div>

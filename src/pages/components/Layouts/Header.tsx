@@ -11,15 +11,17 @@ export default function Haeder() {
                 Free Shipping Over $50 | Get 10% Off - Use Coupon Code HAPPY123
             </div>
             <nav className="w-full  bg-white shadow  sticky top-0 z-10">
-                <div className="h-24 justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+                <div className="h-24 justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
-                        <div className="h-24 flex  items-center justify-between py-3 md:py-5 md:block">
-                        <Link href="/">
+                        <div className="h-24 flex pl-4 items-center justify-between py-3 md:py-5 md:block">
+                           <div className='w-96'>
+                             <Link href="/">
                                 <h2 className="text-2xl text-[#282828] font-bold pt-2">h a p p y &nbsp; k i d s</h2>
                                 </Link>      
+                           </div>
                             <div className="md:hidden">
                                 <button
-                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-none focus:outline-none'"
                                     onClick={() => setNavbar(!navbar)}
                                 >
                                     {navbar ? (
@@ -55,10 +57,9 @@ export default function Haeder() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='bg-white w-full px-4 '>
                         <div
-                            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
-                                }`}
+                            className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'}`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-[#282828]">
