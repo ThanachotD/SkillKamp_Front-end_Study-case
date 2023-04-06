@@ -7,10 +7,10 @@ export default function Haeder() {
     const [navbar, setNavbar] = useState(false);
     return (
         <>
-            <div className='w-full flex justify-center bg-[#282828]  text-white p-2 text-lg  tracking-[0.25rem]'>
+            <div className='w-full flex justify-center bg-[#282828] hidden  text-white p-2 text-lg  tracking-[0.25rem]'>
                 Free Shipping Over $50 | Get 10% Off - Use Coupon Code HAPPY123
             </div>
-            <nav className="w-full  bg-white shadow  sticky top-0">
+            <nav className="w-full  bg-white shadow  sticky top-0 z-10">
                 <div className="h-24 justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
                         <div className="h-24 flex  items-center justify-between py-3 md:py-5 md:block">
@@ -63,29 +63,29 @@ export default function Haeder() {
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-[#282828]">
                                     <Link href="/home">
-                                    <div >Home </div>
+                                    <div className='tracking-normal'>Home </div>
                                     </Link>
                                 </li>
                                 <li className="text-[#282828]">
                                     <Link href="/shopcollection">
-                                    <div>Shop Collection</div>
+                                    <div className='tracking-normal'>Shop Collection</div>
                                     </Link>
                                 </li>
                                 <li className="text-[#282828]">
                                     <Link href="/ourstory">
-                                    <div>Our Story</div>
+                                    <div className='tracking-normal'>Our Story</div>
                                     </Link>
                                 </li>
                                 <li className="text-[#282828]">
                                     <Link href="/contact">
-                                    <div>Contact</div>
+                                    <div className='tracking-normal'> Contact</div>
                                     </Link>
                                 </li>
                                     <li className="text-[#282828]">
                                     <Link href="/">
                                     <div className='flex flex-row'> 
                                     <div className='mr-2'><CiUser size={25}/> </div>
-                                    <div>Log In</div>
+                                    <div className='tracking-normal'> Log In</div>
                                     </div>
                                     </Link>
                                 </li>

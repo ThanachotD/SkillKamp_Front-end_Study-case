@@ -10,17 +10,16 @@ export default function Carousel() {
 
     return (
         <>
-        <div >
-           <Image
-                        src={'/Banner1.png'}
-                        alt="Picture 1"
-                        
-                        width={1920}
-                        height={1080}
-                        className='static'
-                        
-                    />
-        </div>
+        <div className="relative md:h-[600px] lg:h-[731px] h-[731px] z-0">
+        <Image
+          src="/Banner2.png"
+          alt="Picture 1"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="50% 0"
+         
+        />
+      </div>
         </>
     );
 }
