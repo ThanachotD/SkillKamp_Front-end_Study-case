@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
-
-
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {FaUserCircle } from 'react-icons/fa'  
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
     return (
         <>
-            <div className='w-full flex justify-center bg-[#282828] text-white p-4'>
+            <div className='w-full flex justify-center bg-[#282828] text-white p-4 '>
                 Free shipping Over $50
             </div>
             <nav className="w-full bg-white shadow">
@@ -14,7 +14,7 @@ export default function Navbar() {
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
-                                <h2 className="text-2xl text-[#282828] font-bold ">Happy kids</h2>
+                                <h2 className="text-2xl text-[#282828] font-bold ">h a p p y &nbsp; k i d s</h2>
                                 </Link>      
                             <div className="md:hidden">
                                 <button
@@ -62,7 +62,7 @@ export default function Navbar() {
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-[#282828]">
                                     <Link href="/home">
-                                    <div className='font-sans'>Home </div>
+                                    <div >Home </div>
                                     </Link>
                                 </li>
                                 <li className="text-[#282828]">
@@ -82,12 +82,12 @@ export default function Navbar() {
                                 </li>
                                     <li className="text-[#282828]">
                                     <Link href="/">
-                                    <div>Login</div>
+                                    <div> <FaUserCircle/> Log In</div>
                                     </Link>
                                 </li>
                                      <li className="text-[#282828]">
                                     <Link href="/purchase">
-                                    <div>Purchase</div>
+                                    <div><AiOutlineShoppingCart/></div>
                                     </Link>
                                 </li>
                             </ul>
