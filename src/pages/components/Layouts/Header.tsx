@@ -3,19 +3,19 @@ import { useState } from 'react';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {CiUser , CiShoppingCart} from 'react-icons/ci'
 
-export default function Navbar() {
+export default function Haeder() {
     const [navbar, setNavbar] = useState(false);
     return (
         <>
-            <div className='w-full flex justify-center bg-[#282828] text-white p-2 text-lg tracking-widest'>
-                Free shipping Over $50
+            <div className='w-full flex justify-center bg-[#282828]  text-white p-2 text-lg  tracking-[0.25rem]'>
+                Free Shipping Over $50 | Get 10% Off - Use Coupon Code HAPPY123
             </div>
-            <nav className="w-full bg-white shadow">
-                <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <nav className="w-full  bg-white shadow  sticky top-0">
+                <div className="h-24 justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
-                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                        <div className="h-24 flex  items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
-                                <h2 className="text-2xl text-[#282828] font-bold ">h a p p y &nbsp; k i d s</h2>
+                                <h2 className="text-2xl text-[#282828] font-bold pt-2">h a p p y &nbsp; k i d s</h2>
                                 </Link>      
                             <div className="md:hidden">
                                 <button
@@ -93,7 +93,7 @@ export default function Navbar() {
                                     <Link href="/purchase">
                                     <div className='flex flex-row' >
                                         <div className='mr-2'><CiShoppingCart size={25} /></div> 
-                                        <div>My Cart</div>
+                                        <div className='bg-black mt-1 text-white text-[10px] rounded-full w-4 h-4 flex justify-center content-center'> 0</div>
                                         </div>
                                     </Link>
                                 </li>

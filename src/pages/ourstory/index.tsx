@@ -14,8 +14,8 @@ export default function Ourstory() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-screen h-screen bg-gradient-to-br from-[#00152A] to-[#121212] relative flex items-center">
-         <div className="container mx-auto p-4 md:w-8/12 w-96">
+      <main className="w-screen h-screen">
+          <div className="container mx-auto p-4 md:w-8/12 w-96">
           <div className="flex justify-center grid grid-cols-1 gap-1 gap-y-4 ">
             <h1> our story</h1>
           </div>
