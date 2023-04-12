@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Carousel from './components/Carousel'
+import Carousel2 from './components/Carousel/Carousel'
 import Newarrivals from './components/Newarrivals'
 import Footer from './components/Layouts/Footer'
 

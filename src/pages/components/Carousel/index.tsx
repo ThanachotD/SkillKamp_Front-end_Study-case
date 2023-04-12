@@ -10,7 +10,7 @@ export default function Carousel() {
 
     return (
         <>
-        <div className="relative md:h-[600px] lg:h-[731px] h-[731px] z-0">
+        <div className="relative md:h-[600px] lg:h-[900px] h-[731px] z-0">
         <Image
           src="/Banner2.png"
           alt="Picture 1"
