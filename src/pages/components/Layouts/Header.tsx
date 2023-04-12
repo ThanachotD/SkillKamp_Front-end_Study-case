@@ -63,7 +63,7 @@ export default function Haeder() {
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-[#282828]">
-                                    <Link href="/home">
+                                    <Link href="/">
                                     <div className='tracking-normal'>Home </div>
                                     </Link>
                                 </li>

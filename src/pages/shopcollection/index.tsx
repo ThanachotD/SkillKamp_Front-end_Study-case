@@ -20,12 +20,12 @@ export default function Shopcollection() {
       <main className=""> 
       <div className="container mx-auto p-4 md:w-10/12 w-96 flex justify-center">
           <div className='grid grid-cols-1 gap-4'>
-            <h1 className='flex justify-center'>shop collection</h1>
-          <div className="grid grid-cols-3">
-          <div className='inline-block'><Filter/></div>
-          
-          <div className='col-span-2'>          
-          <div className="grid grid-cols-3 gap-4">
+          <div className='flex justify-center'><h1 className='text-2xl tracking-widest '>Shop Collection</h1></div>
+          <div className="grid grid-cols-6">
+          <div className='hidden md:hidden lg:block'><Filter/></div>
+
+          <div className='md:col-span-6 lg:col-span-5 col-span-6'>          
+          <div className="grid md:grid-cols-3 gap-4">
                     <div><Products/></div>
                     <div><Products/></div>
                       <div><Products/></div>
