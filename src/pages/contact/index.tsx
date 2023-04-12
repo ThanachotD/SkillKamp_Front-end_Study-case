@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import Iframe from '../components/Iframe'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,10 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <div className="container mx-auto p-4 md:w-10/12 w-96 flex justify-center">
+      <div className="container mx-auto p-4 md:w-10/12 w-96 flex justify-center my-12">
           <div className='grid grid-cols-1 gap-4'>
           <div className='flex justify-center'>
-            <h1 className='text-2xl tracking-widest pb-8'>Contact Us</h1>
+            <h1 className='text-4xl tracking-widest pb-8'>Contact Us</h1>
             </div>
           <div className="grid grid-cols-3 gap-24 ">
             <div className="flex flex-col">
@@ -68,11 +68,11 @@ export default function Home() {
                     placeholder="Enter your message"></textarea>
             </div>
 
-            <button className="block w-full px-2 py-4 mt-2 text-white bg-black ">Submit</button>
+            <button className="block w-full px-2 py-4 mt-2 text-white bg-[#D2461C] ">Submit</button>
         </form>
     </div>
+      </div>
 
-          </div>
           </div>
         
       </main>
